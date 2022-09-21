@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Fuso hórario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Fuso Hórario</h1>
+
+
+    <!-- Lugar A-->
+    <div style="background-color:beige;">
+
+        <p>Informe a Longitude</p>
+
+        <label for="grausA">Graus</label>
+        <input type="number" id="grausA">
+    
+        <input type="radio" name="sentidoA" id="sentidoAOeste" value="OESTE">
+        <label for="sentidoAOeste">Oeste</label>
+    
+        <input type="radio" name="sentidoA" id="sentidoALeste" value="LESTE"> 
+        <label for="sentidoALeste">Leste</label>
+
+        <label for="horarioA">Hórario</label>
+        <input type="number" id="horarioA">
+    </div>
+
+    <!-- Lugar B-->
+    <div style="background-color:beige;">
+
+        <p>Informe a Longitude</p>
+
+        <label for="grausB">Graus</label>
+        <input type="number" id="grausB">
+
+        <input type="radio" name="sentidoB" id="sentidoBOeste" value="OESTE">
+        <label for="sentidoBOeste">Oeste</label>
+    
+        <input type="radio" name="sentidoB" id="sentidoBLeste" value="LESTE">
+        <label for="sentidoBLeste">Leste</label>
+
+        <span id="horarioB"></span>
+    </div>
+
+    <div style="background-color:beige;">
+        <p>O primeiro lugar está a LESTE ou a OESTE em relação ao primeiro lugar ?</p>
+        
+        <input type="radio" name="sentidoConta" id="sentidoContaOeste" value="OESTE">
+        <label for="sentidoAOeste">Oeste</label>
+    
+        <input type="radio" name="sentidoConta" id="sentidoContaLeste" value="LESTE"> 
+        <label for="sentidoALeste">Leste</label>
+    </div>
+
+    <div>
+        <button onclick="calculaFuso()">Calcular</button>
+    </div>
+    
+    <div id="resultado">
+        <h2>Resultado</h2>
+    </div>
+
+    <div>
+        <p>
+            WEST = OESTE <br>
+            EAST = LESTE
+
+        </p>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
